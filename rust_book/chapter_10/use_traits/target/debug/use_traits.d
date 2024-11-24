@@ -1,0 +1,1 @@
+/home/rares/Facultate/rust/rustification/rust_book/chapter_10/use_traits/target/debug/use_traits: /home/rares/Facultate/rust/rustification/rust_book/chapter_10/traits/src/lib.rs /home/rares/Facultate/rust/rustification/rust_book/chapter_10/use_traits/src/main.rs
