@@ -1,0 +1,1 @@
+/home/rares/Facultate/rust/rustification/rust_book/chapter_13/iterators/target/debug/iterators: /home/rares/Facultate/rust/rustification/rust_book/chapter_13/iterators/src/lib.rs /home/rares/Facultate/rust/rustification/rust_book/chapter_13/iterators/src/main.rs

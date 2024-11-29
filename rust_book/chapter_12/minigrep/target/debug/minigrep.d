@@ -1,0 +1,1 @@
+/home/rares/Facultate/rust/rustification/rust_book/chapter_12/minigrep/target/debug/minigrep: /home/rares/Facultate/rust/rustification/rust_book/chapter_12/minigrep/src/lib.rs /home/rares/Facultate/rust/rustification/rust_book/chapter_12/minigrep/src/main.rs

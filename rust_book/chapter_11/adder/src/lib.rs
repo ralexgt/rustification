@@ -39,6 +39,8 @@ impl Guess {
         Guess { value }
     }
 }
+
+// convention: unit tests are put in the src file of the functions they are testing, in a module named tests at the end of the file annotated with #[cfg(test)]
 #[cfg(test)]
 mod tests {
     use super::*;

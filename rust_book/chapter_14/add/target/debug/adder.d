@@ -1,0 +1,1 @@
+/home/rares/Facultate/rust/rustification/rust_book/chapter_14/add/target/debug/adder: /home/rares/Facultate/rust/rustification/rust_book/chapter_14/add/add_one/src/lib.rs /home/rares/Facultate/rust/rustification/rust_book/chapter_14/add/add_two/src/lib.rs /home/rares/Facultate/rust/rustification/rust_book/chapter_14/add/adder/src/main.rs
