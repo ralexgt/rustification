@@ -4,4 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+read_input = {path = "../read_input"}
 nom = "7.1.3"
+itertools = "0.13.0"

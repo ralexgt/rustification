@@ -1,8 +1,9 @@
 [workspace]
 resolver = "2"
 
-members = ["day-*"]
-default-members = ["day-*"]
+members = ["day-*", "read_input"]
+default-members = ["day-*", "read_input"]
 
 [workspace.dependencies]
 nom = "7.1.3"
+itertools = "0.13.0"

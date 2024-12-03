@@ -1,10 +1,4 @@
-use std::fs;
-use std::error::Error;
-
-fn read_file(file_path: &str) -> Result<String, Box<dyn Error>> {
-    let data_string = fs::read_to_string(file_path)?;
-    Ok(data_string)
-}
+use read_input::read_file;
 
 fn process_input_p1(input: &str) -> String {
     let mut left = vec![];
@@ -43,9 +37,6 @@ fn process_input_p2(input: &str) -> String {
             locations.next().unwrap_or("0").parse::<i32>().unwrap() // we default to 0 if the line is empty because the result won't change
         );
     }
-    left.sort();  // we want to compare the locations at the same indexes in the sorted vectors
-    right.sort();
-    
 
     // iterate over items in the first list of for each item check all items in the second list
     // if they appear we increase the count of how many times they appear. Finally for each number
@@ -66,13 +57,13 @@ fn process_input_p2(input: &str) -> String {
 
 
 fn main() {
-    // read the input for the puzzle from an input file found in the root of the crate day-1
+    // read the input for the puzzle from an input file
     let puzzle_input = "input_day_1";
-    let input: String;
-    match read_file(&puzzle_input) {
-        Ok(result) => input = result,
-        Err(e) => panic!("{}", e),
-    }
+    let input = 
+        match read_file(&puzzle_input) {
+            Ok(result) => result,
+            Err(e) => panic!("{}", e),
+        };
 
     // process the input and output the result to the console
     let result = process_input_p1(&input);
