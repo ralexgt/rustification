@@ -12,3 +12,8 @@ fn main() {
 fn another_function(x: i32) {
     println!("The value of x is: {x}");
 }
+
+// loop labels
+// 'loop_labe: loop {
+//     break 'loop_label;
+//}
