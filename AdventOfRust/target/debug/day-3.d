@@ -1,0 +1,1 @@
+/home/rares/Facultate/rust/rustification/AdventOfRust/target/debug/day-3: /home/rares/Facultate/rust/rustification/AdventOfRust/day-3/src/main.rs /home/rares/Facultate/rust/rustification/AdventOfRust/read_input/src/lib.rs

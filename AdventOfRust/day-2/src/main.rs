@@ -63,7 +63,6 @@ fn is_safe(report: &Report) -> bool {
             _ => return false,
         }
     }
-    println!("{report:?}");
     true
 }
 
@@ -85,6 +84,41 @@ fn process_input_p1(input: &str) -> String {
     safe_reports.to_string()
 } 
 
+// part 2 is similar to part 1, but we brute force it. If the initial report fails,
+// we go through each element of the report and remove it. If the remaining report
+// fails we continue and go to the next element and remove it and so on.
+// if it succeedes even once then it passes the test 
+fn process_input_p2(input: &str) -> String {
+    // panic if it errors, it shouldn't if the input is correct
+    let reports = 
+        match parse(input){
+            Ok(val) => val,
+            Err(_) => panic!("panicked in parsing"),
+        };
+    let safe_reports = reports.1
+        .iter()
+        .filter(|&report| {
+            if !is_safe(report) {
+                for (i, _) in report.iter().enumerate() {
+                    let mut cloned_report = report.clone();
+                    cloned_report.remove(i);
+                    if is_safe(&cloned_report) {
+                        return true
+                    } else {
+                        continue
+                    }
+                }
+                return false;
+            } else {
+                true
+            }
+        })
+        .count();
+
+    
+    safe_reports.to_string()
+} 
+
 fn main() {
     // read the input for the puzzle from an input file
     let puzzle_input = "input_day_2";
@@ -96,7 +130,8 @@ fn main() {
     let result = process_input_p1(&input);
     println!("Advent of Code | Day 2 Part 1: {}", result);
 
-    // to do part 2
+    let result = process_input_p2(&input);
+    println!("Advent of Code | Day 2 Part 2: {}", result);
 }
 
 #[cfg(test)]

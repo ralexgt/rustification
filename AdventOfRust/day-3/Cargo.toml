@@ -1,0 +1,9 @@
+[package]
+name = "day-3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+read_input = {path = "../read_input"}
+regex-split = "0.1.0"
+regex = "1.11.1"
