@@ -30,7 +30,10 @@ fn main() {
     let config_max = Some(3u8);
     if let Some(max) = config_max {
         println!("The maximum is configured to be {max}");
-    }
+    } // the pattern is Some(max)
+      // the code in the if let block isn't run if the value doesn't match the pattern
+      // I prefer match over if let even though it can be more verbose
+    
 }
 
 struct Ipv4Addr {}
