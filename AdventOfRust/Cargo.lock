@@ -37,6 +37,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "day-4"
+version = "0.1.0"
+dependencies = [
+ "diagonal",
+ "read_input",
+]
+
+[[package]]
+name = "diagonal"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6910f3b387cb19ba7e2de01fb201c2c00246327b5960a5271bdf3674618687c0"
+
+[[package]]
 name = "either"
 version = "1.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
